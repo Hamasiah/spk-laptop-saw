@@ -368,3 +368,19 @@ body {
 }
 
 
+.btn-logout {
+    display: inline-block;
+    background: #800020;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-logout:hover {
+    background: #600018;
+}
+

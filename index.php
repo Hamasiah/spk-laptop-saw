@@ -1,5 +1,11 @@
-
 <?php
+session_start();
+
+if (!isset($_SESSION['pengguna'])) {
+    header("Location: login.php");
+    exit;
+}
+
 require_once 'koneksi.php';
 
 $jumlahAlternatif = $koneksi->query("SELECT COUNT(*) FROM alternatif")->fetchColumn();
@@ -7,7 +13,6 @@ $jumlahKriteria = $koneksi->query("SELECT COUNT(*) FROM kriteria")->fetchColumn(
 $jumlahPenilaian = $koneksi->query("SELECT COUNT(*) FROM penilaian")->fetchColumn();
 $jumlahPengguna = $koneksi->query("SELECT COUNT(*) FROM pengguna")->fetchColumn();
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -43,10 +48,15 @@ $jumlahPengguna = $koneksi->query("SELECT COUNT(*) FROM pengguna")->fetchColumn(
             <p>Selamat datang di Sistem Pendukung Keputusan Pemilihan Laptop.</p>
         </div>
 
-        <div class="admin">
-            <div class="admin-icon">A</div>
-            <span>Administrator</span>
-        </div>
+        <
+<div class="admin">
+    <div class="admin-icon">A</div>
+    <span>
+        <?= htmlspecialchars($_SESSION['pengguna']['nama']) ?>
+    </span>
+    <a href="logout.php" class="btn-logout">Logout</a>
+</div>
+
     </div>
 
     <div class="welcome">
