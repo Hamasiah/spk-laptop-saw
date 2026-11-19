@@ -3,7 +3,7 @@
 Sistem Pendukung Keputusan berbasis web untuk memilih laptop terbaik bagi mahasiswa menggunakan metode **Simple Additive Weighting (SAW)**.
 
 Mata kuliah: Sistem Pendukung Keputusan (SPK) - Kelompok 7
-Anggota: Hamasiah Tiopan Ompusunggu dan Fitrah
+Anggota: Hamasiah Tiopan Ompusunggu dan Fitrah Hasibuan
 
 ## Kriteria dan Bobot
 
