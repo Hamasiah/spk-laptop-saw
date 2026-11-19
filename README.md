@@ -42,6 +42,8 @@ Koneksi database ada di `koneksi.php` (user `root`, tanpa password, bawaan XAMPP
 - `penilaian.php` - Data penilaian
 - `perhitungan.php` - Matriks keputusan dan normalisasi
 - `hasil.php` - Hasil perangkingan
+- `login.php` - fitur login
+- `logout.php` - fitur logout
 - `rekomendasi.php` - Rekomendasi laptop terbaik
 - `style.css` - Tampilan
 - `dokumen/` - Laporan (Word), perhitungan manual (Excel), dan database (`spk.sql`)
